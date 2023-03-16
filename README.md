@@ -1,8 +1,9 @@
-# STM8S_Lesson5_STD_PWM
+# NOTE: ALL PROJECT USE STM8S208C8T6 WITH DISCOVERY BOARD. CODE PROGRAMING: IAR Embedded Workbench
+See detail in this project: https://github.com/IMetals/Template_IAR_STM8S.git
 # Lesson 5: STD_STM8S_PWM
 ## Introduce
 Pulse width modulation mode allows you to generate a signal with a frequency determined by the value of the TIM1_ARR register and a duty cycle determined by the value of the
-TIM1_CCRi registers.
+TIM1_CCRi registers.  
 ![Imgur](https://imgur.com/GZL4iPM.png)
 
 ## Exercise 1: Config Timer 1 Channel 1 (TIM1_CH1) set PWM with period T = 20ms (f = 50Hz) and Duty cycle = 50%
@@ -34,10 +35,10 @@ Result:
 Check datasheet to known how to control this servo
 Feature:
 1. Tiny and lightweight with high output power. Servo can rotate approximately 180 degrees (90 in each direction)
-2. Position "0" (1.5 ms pulse) is middle, "90" (~2ms pulse) is all the way to the right, "-90" (~1ms pulse) is all the way to the left.
-![Imgur](https://imgur.com/ghiVt4H.png)
-***The pulse width values for different angular positions of this servo are provided in the table below. Remember that the repetition rate of the pulse should be 50 Hz (period of 20 ms).***
-![Imgur](https://imgur.com/SKZOJlF.png)
+2. Position "0" (1.5 ms pulse) is middle, "90" (~2ms pulse) is all the way to the right, "-90" (~1ms pulse) is all the way to the left.  
+![Imgur](https://imgur.com/ghiVt4H.png)  
+***The pulse width values for different angular positions of this servo are provided in the table below. Remember that the repetition rate of the pulse should be 50 Hz (period of 20 ms).***  
+![Imgur](https://imgur.com/SKZOJlF.png)  
 Use function created above, in while loop main.c, write code below
 ```c
   while (1)
@@ -49,4 +50,4 @@ Use function created above, in while loop main.c, write code below
   }
 ```
 
-This code will control Servo motor rotate 0 - 180 degree, Frequency f = 0.5Hz
+This code will control Servo motor rotate 0 - 180 degree, Frequency f = 0.5Hz  
